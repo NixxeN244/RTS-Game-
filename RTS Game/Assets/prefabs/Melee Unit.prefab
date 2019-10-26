@@ -152,4 +152,4 @@ MonoBehaviour:
   speed: 5
   health: 20
   attackDam: 5
-  thisObjectSpawn: {fileID: 0}
+  thisObjectSpawn: {fileID: 2436720598511223751}
