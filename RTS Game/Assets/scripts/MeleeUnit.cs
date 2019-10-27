@@ -19,12 +19,14 @@ public class MeleeUnit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         //agent = GetComponent<NavMeshAgent>();
         //enemy = GameObject.FindGameObjectWithTag("ranger");
-        for (int i = 0; i < 4; i++)
-        {
-            GameObject spawn = Instantiate(this.gameObject, Base1.transform.position, Quaternion.identity);
-        }
+        
+        
+            GameObject spawn = Instantiate(this.gameObject, thisObjectSpawn.transform.position, Quaternion.Euler(0f,0f,0f));
+            spawn.GetComponent<Rigidbody>().AddForce(new Vector3(0f, 0f, speed), ForceMode.Impulse);
+        
     }
 
     // Update is called once per frame
